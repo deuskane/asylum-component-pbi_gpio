@@ -6,7 +6,7 @@
 -- Author     : Mathieu Rosiere
 -- Company    : 
 -- Created    : 2017-03-30
--- Last update: 2017-03-30
+-- Last update: 2022-07-13
 -- Platform   : 
 -- Standard   : VHDL'87
 -------------------------------------------------------------------------------
@@ -29,8 +29,8 @@ entity pbi_GPIO is
 --  SIZE_ADDR        : natural:=8;     -- Bus Address Width
 --  SIZE_DATA        : natural:=8;     -- Bus Data    Width
     NB_IO            : natural:=8;     -- Number of IO. Must be <= SIZE_DATA
-    DATA_OE_INIT     : boolean:=false; -- Direction of the IO after a reset
-    DATA_OE_FORCE    : boolean:=false; -- Can change the direction of the IO
+    DATA_OE_INIT     : std_logic_vector; -- Direction of the IO after a reset
+    DATA_OE_FORCE    : std_logic_vector; -- Can change the direction of the IO
     IT_ENABLE        : boolean:=false; -- GPIO can generate interruption
     ID               : std_logic_vector (PBI_ADDR_WIDTH-1 downto 0) := (others => '0')
     );

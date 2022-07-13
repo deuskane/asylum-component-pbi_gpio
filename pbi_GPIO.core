@@ -12,11 +12,12 @@ CAPI=2:
 # Copyright (c) 2021
 #-----------------------------------------------------------------------------
 # Revisions  :
-# Date        Version  Author   Description
-# 2021-10-26  1.0.0    mrosiere Created
+# Date        Version Author   Description
+# 2021-07-13  1.1.0   mrosiere DATA_OE_<INIT/FORCE> in NB_IO
+# 2021-10-26  1.0.0   mrosiere Created
 #-----------------------------------------------------------------------------
 
-name : asylum:component:pbi_GPIO:1.0.0
+name : asylum:component:pbi_GPIO:1.1.0
 description : PBI Generic wrapper for target IP
 
 filesets:
