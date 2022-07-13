@@ -13,7 +13,7 @@ CAPI=2:
 #-----------------------------------------------------------------------------
 # Revisions  :
 # Date        Version Author   Description
-# 2021-07-13  1.1.0   mrosiere DATA_OE_<INIT/FORCE> in NB_IO
+# 2022-07-13  1.1.0   mrosiere DATA_OE_<INIT/FORCE> in NB_IO
 # 2021-10-26  1.0.0   mrosiere Created
 #-----------------------------------------------------------------------------
 
