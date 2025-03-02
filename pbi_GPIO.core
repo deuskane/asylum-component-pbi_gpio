@@ -30,7 +30,7 @@ filesets:
     files        :
       - src/pbi_GPIO.vhd
     file_type    : vhdlSource
-    logical_name : asylum
+    #logical_name : asylum
     depend :
       - ">=asylum:component:pbi_wrapper_target:1.0.0"
       - ">=asylum:component:GPIO:1.0.0"

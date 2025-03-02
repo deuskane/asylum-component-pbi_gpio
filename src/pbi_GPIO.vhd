@@ -22,6 +22,7 @@
 library IEEE;
 use     IEEE.STD_LOGIC_1164.ALL;
 use     IEEE.numeric_std.ALL;
+library work;
 use     work.pbi_pkg.all;
 library asylum;
 
