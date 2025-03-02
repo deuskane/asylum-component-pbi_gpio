@@ -6,7 +6,7 @@
 -- Author     : Mathieu Rosiere
 -- Company    : 
 -- Created    : 2017-03-30
--- Last update: 2022-07-13
+-- Last update: 2025-03-02
 -- Platform   : 
 -- Standard   : VHDL'87
 -------------------------------------------------------------------------------
@@ -20,9 +20,10 @@
 -------------------------------------------------------------------------------
 
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.numeric_std.ALL;
-use work.pbi_pkg.all;
+use     IEEE.STD_LOGIC_1164.ALL;
+use     IEEE.numeric_std.ALL;
+use     work.pbi_pkg.all;
+library asylum;
 
 entity pbi_GPIO is
   generic(
@@ -90,7 +91,7 @@ begin  -- architecture rtl
     pbi_tgt_o      => pbi_tgt_o     
     );
 
-  ins_GPIO : entity work.GPIO(rtl)
+  ins_GPIO : entity asylum.GPIO(rtl)
   generic map(
     SIZE_DATA        => PBI_DATA_WIDTH,
     NB_IO            => NB_IO         ,
